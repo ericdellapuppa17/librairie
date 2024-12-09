@@ -1,0 +1,130 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: Arial, Verdana, sans-serif;
+}
+main {
+    margin-left: 50px;    
+    color: black;
+    font-size: 14px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Lucida Calligraphy', cursive;
+    font-size: 34px;
+    color: #aa3322;
+    text-shadow: 0.5px 0.5px 0.1em darkgray;
+}
+.menu {
+    background-color: #aa3322;
+    text-align: center; 
+}
+.nav {      
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    border-right: 1px #cccccc dashed;/* sur les screenshot, il n'y a que la bordure à droite, et dans l'énoncé elle est à gauche également, je choisis le screenshot */ 
+    padding: 10px;
+}
+.nav:hover {
+    background-color: #cccccc;
+    color: white;
+}
+h2 {
+    color: black;
+    font-size: 26px;
+    text-align: center;
+    font-style: italic;
+}
+h3 {
+    color: black;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;/*pour enlever le underline par défaut de toutes les balises <a> de mes pages*/
+}
+.lienrouge {
+    color: #aa3322;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+.lienrouge:hover {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+.textepres {
+    margin-bottom: 50px;
+}
+.horaire {
+    margin-top: -15px;/*pour compenser la mise en forme par défaut de la balise <pre>*/
+}
+pre {       
+    font-family: Arial, Verdana, sans-serif;/*pour contourner le style par éfaut de la balise <pre>*/
+    color: black;
+    font-size: 14px;    
+}
+.liencoupdecoeur {
+    text-align: center;
+}
+.lienancre {
+    display: inline;
+    color: #aa3322;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.lienancre:hover {
+    text-decoration: none;
+}
+#classiques:target, #romans:target {
+    color: #aa3322;
+}
+.livres {    
+    width: 80%;
+    margin-left: calc(10% - 50px);/*pour centrer (10% de chaque coté) et compenser la margin-left du main*/
+}
+.bloclivre {
+    background-color: #ededed;
+    border: #aa3322 2px solid;
+    border-radius: 10px;
+    width:32.3%;/*1/3 du père en laissant un petit espace*/ 
+    display: inline-block; 
+    text-align: left;    
+}
+.bloclivre cite {
+    color: #aa3322;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bloclivre b {
+    color: black;
+    font-size: 16px;/*j'ai choisi une balise <b> donc c'est en gras*/
+}
+.bloccitation {
+    background-color: #ededed;
+    border: 2px #aa3322 dashed;
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 40px;/*40px + 50px hérité du main soit 90px du bandeau*/
+    width: 450px;
+}
+p {
+    margin-bottom: 30px;/*il n'y a des <p> que sur la page 4*/
+}
+footer {
+    background-color: #aaaaaa;
+    color: #721717;
+    font-size: 14px;
+    padding: 30px 15px;
+    column-count: 2;
+    column-width: 180px;
+    column-gap: calc(100% - 360px - 30px);/*largeur totale - 2x colonnes - 2x padding*/        
+    margin-top: 50px;         
+}
+footer > address {
+    font-weight: bold;
+    text-align: right;
+}
